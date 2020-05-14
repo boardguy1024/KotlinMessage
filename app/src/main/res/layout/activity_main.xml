@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/holo_green_light"
-    tools:context=".MainActivity" >
+    tools:context=".RegisterActivity" >
 
     <EditText
         android:id="@+id/email_textview"
@@ -49,7 +49,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/rounded_textview_reg_login"
@@ -59,7 +59,7 @@
         android:text="username"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/select_photo_button" />
 
     <Button
         android:id="@+id/register_button"
@@ -85,4 +85,17 @@
         app:layout_constraintEnd_toEndOf="@+id/register_button"
         app:layout_constraintStart_toStartOf="@+id/register_button"
         app:layout_constraintTop_toBottomOf="@+id/register_button" />
+
+    <Button
+        android:id="@+id/select_photo_button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"
+        android:text="SELETE PHOTO"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_selecte_photo_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
